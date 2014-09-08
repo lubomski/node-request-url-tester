@@ -47,46 +47,47 @@ for (var i = 0; i < URLStoTest.length; i++) {
             
             switch (response.statusCode) {
 			
-			case (response.statusCode = 200): 
+			case 200: 
 				statusMessage = 'SUCCESS! --';
 				break;		
-			case (response.statusCode = 301): 
+			case 301: 
 				statusMessage = 'PERMANENT REDIRECT! --';	
 				break;
-			case (response.statusCode = 302): 
+			case 302: 
 				statusMessage = 'TEMPORARY REDIRECT! --';	
 				break;	
-			case (response.statusCode = 403): 
+			case 403: 
 				statusMessage = 'FORBIDDEN! --';	
 				break;	
-			case (response.statusCode = 404): 
+			case 404: 
 				statusMessage = 'NOT FOUND! --';	
 				break;	
-			case (response.statusCode = 408): 
+			case 408: 
 				statusMessage = 'REQUEST TIMEOUT! --';	
 				break;
-			case (response.statusCode = 410): 
+			case 410: 
 				statusMessage = 'GONE! --';	
 				break;		
-			case (response.statusCode = 500): 
+			case 500: 
 				statusMessage = 'INTERNAL SERVER ERROR! --';		
 				break;
-			case (response.statusCode = 501): 
+			case 501: 
 				statusMessage = 'NOT IMPLEMENTED! --';		
 				break;
-			case (response.statusCode = 502): 
+			case 502: 
 				statusMessage = 'BAD GATEWAY! --';		
 				break;
-			case (response.statusCode = 503): 
+			case 503: 
 				statusMessage = 'SERVICE UNAVAILABLE! --';		
 				break;
-			case (response.statusCode = 504): 
+			case 504: 
 				statusMessage = 'GATEWAY TIMEOUT! --';		
 				break;
 			default: 
 				statusMessage = "WTF! --"; 
 				break;		
 			}
+			
 			
 			console.log(statusMessage, response.statusCode,' -- ', url);
             
